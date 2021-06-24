@@ -9,6 +9,11 @@ variable "assessment_account_name" {
   description = "The name of the AWS account for this assessment (e.g. \"env0\")."
 }
 
+variable "commando_ami_name" {
+  type        = string
+  description = "The name of the CommandoVM AMI to use (e.g. \"import-ami-0123456789abcdef0\")."
+}
+
 variable "operations_subnet_cidr_block" {
   type        = string
   description = "The operations subnet CIDR block for this assessment (e.g. \"10.10.0.0/24\")."
